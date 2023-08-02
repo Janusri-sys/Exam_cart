@@ -1,0 +1,141 @@
+*{
+   margin: 5px;
+   padding: 5px;
+   font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background : url('./bg1.jpg') no-repeat;
+    background-size:cover;
+
+}
+h1.head{
+    font-size: 90px;
+    font-weight: 400;
+    margin-top: 15%;
+    
+    color:aliceblue;
+    display:flex;
+
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    padding:15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul{
+    
+    position: absolute;
+    margin-left: 75%;
+    
+    margin-bottom: 55%;
+    display:flex;
+}
+.navbar ul li{
+    list-style-type: none;
+    
+    
+} 
+.navbar ul li button{
+    font-size:20px;
+    display:flex;
+    cursor:pointer;
+    border-radius: 10%;
+    justify-items: center;
+     
+
+}   
+
+.login-form p{
+    color:antiquewhite;
+    text-decoration: solid;
+    font-size:large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#login-form{
+    display:none;
+}
+#register-form{
+    display:none;
+}
+.register-form p{
+    color:antiquewhite;
+    text-decoration: solid;
+    font-size:large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.login-form{
+    width:350px;
+    top:50%;
+    left:60%;
+    transform:translate(-50% , -50%);
+    position:absolute;
+}
+.login-form h1{
+    color:aliceblue;
+    font-style: oblique;
+    font-size:40px; 
+    text-transform: uppercase;
+    text-decoration: double;
+    margin:40px;
+    margin-left: 30%;
+}
+.login-form input{
+    width:100%;
+    font-size: 20px;
+    padding:10px 10px;
+}
+.login-form button{
+    width:25%;
+    font-size:20px;
+    margin-left: 40%;
+    padding:10px 10px;
+    margin-top:20%;
+    
+}
+.login-form button a{
+    text-decoration: none;
+    text-align: center;
+    margin:auto;
+    color:black;
+}
+.login-form{
+    width:350px;
+    top:50%;
+    left:60%;
+    transform:translate(-50% , -50%);
+    position:absolute;
+}
+.register-form{
+    width:350px;
+    top:50%;
+    left:60%;
+    transform:translate(-50% , -50%);
+    position:absolute;
+}
+.register-form h1{
+    color:aliceblue;
+    font-style: oblique;
+    font-size:40px; 
+    text-transform: uppercase;
+    text-decoration: double;
+    margin:25px;
+    margin-left: 20%;
+}
+.register-form input{
+    width:100%;
+    font-size: 20px;
+    padding:10px 10px;
+}
+.register-form button{
+    width:25%;
+    font-size:20px;
+    margin-left: 40%;
+    padding:10px 10px;
+    margin-top:10%;
+}

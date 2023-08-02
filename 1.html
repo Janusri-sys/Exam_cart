@@ -1,0 +1,81 @@
+
+<!DOCTYPE <html>
+    <head>
+        <title>sample</title>
+        <link rel="stylesheet" type="text/css" href="./style1.css">
+        <script type="text/javascript">
+            function Validation(){
+                if(document.myform.username.value==""){
+                alert("Please provide username");
+                document.myform.username.focus()
+                return false;
+                }
+                if(document.myform.email.value==""){
+                alert("Please provide your email id");
+                document.myform.email.focus()
+                return false;
+                }
+                else if(document.myform.password.value==""){
+                alert("Please provide your password");
+                document.myform.password.focus()
+                return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h1 class="head">Welcome to<br>EXAMCART....</h1>
+        
+        <div class="navbar">
+            
+            <ul>
+                <li><button class="loginbtn" onclick="myfunction()"style="background-color:white">Login</button></li>
+                <li><button class="regbtn" onclick="myfunction1()"style="background-color:white">Register</button></li>
+            </ul>
+        </div>
+        <script>
+            function myfunction(){
+                document.getElementById('login-form').style.display='block';
+                document.getElementById('register-form').style.display='none';
+            }
+            function myfunction1(){
+                document.getElementById('register-form').style.display='block';
+                document.getElementById('login-form').style.display='none';
+            }
+        </script>
+        
+        <div class="login-form" id="login-form">
+        <h1 class="text">Login</h1>
+        <form action="login.php" method="post" name="myform" onsubmit="return(Validation())">
+            <p class="text">Email:</p>
+            <input type="text" name="email" id="email" placeholder="Enter email" required>
+             <p class="text">Password:</p>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+            <br>
+            <button type="submit">Login</a></button>
+        </form>
+        </div>
+        <div class="register-form" id="register-form">
+            <h1 class="text">REGISTER</h1>
+            <form action="#" method="post" name="myform" onsubmit="return(Validation())">
+                <p class="text">username:</p>
+                <input type="text" name="username" placeholder="Enter name" required>
+                <br>
+                <p class="text">Email:</p>
+                <input type="text" name="email" placeholder="Enter email" required>
+                 <p class="text">Password:</p>
+                <input type="password" name="password" placeholder="Enter password" required>
+                <br>
+                <p class="text">Confirm password:</p>
+                <input type="confirmpassword" name="confirmpassword" placeholder="confirm password" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+    
+    </body>
+</html>
